@@ -58,7 +58,6 @@ ol {
   position: relative;
   margin-bottom: 16px;
   block-size: 386px;
-  margin: 16px 0px;
 }
 .result__video {
   object-fit: cover;
@@ -96,10 +95,6 @@ ol {
 .search-form__textfield:focus {
   outline: none;
 }
-.search-form__textfield:has(:focus-visible) {
-  border: 1px solid white;
-  outline-offset: 2px;
-}
 /* чекбокс */
 .search-form__checkbox-list {
   display: flex;
@@ -112,8 +107,8 @@ ol {
   align-items: center;
   justify-content: center;
   border: 1px solid white;
-  height: 20px;
-  width: 20px;
+  height: 19px;
+  width: 19px;
   cursor: pointer;
 }
 
@@ -155,10 +150,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 /* возможно нужно будет что то убрать*/
 .search-form__submit-button {
-  background-color: transparent;
-  border: 1px solid white;
   padding: 6px 73.5px;
-  color: #ffffff;
   align-self: flex-end;
 }
 .content__details {
@@ -168,7 +160,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   grid-area: sidebar;
 }
 .title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -178,7 +170,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 .content__accent {
   color: #545050;
-  position: relative;
 }
 
 /* Кастомный скроллбар */
@@ -246,7 +237,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   max-width: 196px;
 }
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -257,7 +248,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   color: #fff;
 }
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -276,7 +267,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   background-color: transparent;
   border: 1px solid white;
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: white;
   cursor: pointer;
 }
@@ -300,8 +291,4 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   align-items: center;
   margin-right: 3px;
   margin-left: 3px;
-}
-.more-button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
 }
